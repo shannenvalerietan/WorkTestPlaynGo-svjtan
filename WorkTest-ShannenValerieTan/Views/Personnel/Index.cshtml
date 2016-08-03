@@ -1,0 +1,76 @@
+﻿@model WorkTest_ShannenValerieTan.Models.ViewModel.PersonnelViewModel
+
+<section class="content">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">@ViewBag.PageTitle</h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+            <table id="PersonnelsList" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th><input type="text" id="txtTableId" onclick="getTableId.call(this)" style="display: none;" />Personnel Id</th>
+                        <th>Full Name</th>
+                        <th>Contact Number</th>
+                        <th>Email Address</th>
+                        <th><center><button type="button" class="btn btn-sm btn-default marginL10percent" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus" style="font-size: 12px;" aria-hidden="true"></i></button></center></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Add Modal -->
+@using (Html.BeginForm("PersonnelCreate", "Personnel", FormMethod.Post, new { name = "cminch", enctype = "multipart/form-data" }))
+{
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog W1000" role="document">
+            <div class="modal-content">
+                <div class="form-horizontal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add Personnel</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                @Html.Label("Last Name *")
+                                @Html.TextBoxFor(p => p.personnels.Surname, new { @class = "form-control", @placeholder = "Last Name", @required = "required" })
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.Label("First Name *")
+                                @Html.TextBoxFor(p => p.personnels.FirstName, new { @class = "form-control", @placeholder = "First Name", @required = "required" })
+                            </div>
+                            <div class="col-sm-3">
+                                @Html.Label("Middle Name")
+                                @Html.TextBoxFor(p => p.personnels.MiddleName, new { @class = "form-control", @placeholder = "Middle Name" })
+                            </div>
+                            <div class="col-sm-2">
+                                @Html.Label("Extension Name")
+                                @Html.TextBoxFor(p => p.personnels.ExtensionName, new { @class = "form-control", @placeholder = "Extension Name" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                @Html.Label("Contact Number *")
+                                @Html.TextBoxFor(p => p.personnels.ContactNumber, new { @class = "form-control", @placeholder = "Contact Number", @required = "required" })
+                            </div>
+                            <div class="col-sm-3">
+                                @Html.Label("Email Address *")
+                                @Html.TextBoxFor(p => p.personnels.EmailAddress, new { @class = "form-control", @placeholder = "Email Address", @type = "email", @required = "required" })
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

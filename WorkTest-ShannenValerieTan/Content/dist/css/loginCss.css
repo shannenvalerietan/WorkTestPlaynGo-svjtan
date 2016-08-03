@@ -1,0 +1,92 @@
+﻿html,body{
+    height:100%;
+    overflow-x: hidden!important;
+    overflow-y: hidden !important;
+
+}
+.btn-custom{
+    background-color: rgba(48, 3, 55, 0.39) !important;
+    border-color: rgba(86, 8, 104, 0.41) !important;
+}
+.btn-custom:hover{
+    background-color: rgba(51, 5, 64, 0.69) !important;
+    border-color: rgba(86, 8, 104, 0.41) !important;
+}
+.login-page,
+.register-page {
+    background-color:transparent !important;
+    z-index:9999 !important;
+    margin-top: -50% !important;
+}
+.background{
+    background-image: url('../../images/2.jpg');
+    background-size:cover;
+    background-position: 50% 100% !important;
+    min-height:100%;
+    animation-name: stretch;
+    animation-duration: 15s; 
+    animation-timing-function: ease-out; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+    
+}
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.login-box,
+.register-box {
+    width: 360px !important;
+    margin: 10% auto !important;
+}
+@media (max-width: 768px) {
+  .login-box,
+  .register-box {
+    width: 90% !important;
+    margin-top: 20px !important;
+  }
+}
+.login-box-body,
+.register-box-body {
+  background: rgba(44, 4, 60, 0.37) !important;
+  padding: 20px !important;
+  border-top: 0 !important;
+  color: #666 !important;
+  margin-top:75% !important;
+}
+.login-box-body .form-control-feedback,
+.register-box-body .form-control-feedback {
+  color: rgba(106, 14, 187, 0.39) !important;
+}
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0.00) !important;
+   border-color: #9b75c2;
+   color:white !important;
+}
+.login-logo,
+.register-logo {
+  font-size: 20px !important;
+  font-family:Consolas !important; 
+  margin: 25px auto !important;
+  font-weight: 400 !important;
+  z-index: 99999 !important;
+  position:relative;
+  color:white !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  cursor:default;
+}

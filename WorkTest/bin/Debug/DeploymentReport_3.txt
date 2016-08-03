@@ -1,0 +1,29 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Personnels]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Personnels].[BirthDate] is being dropped, data loss could occur.
+       The column [dbo].[Personnels].[BirthPlace] is being dropped, data loss could occur.
+       The column [dbo].[Personnels].[Gender] is being dropped, data loss could occur.
+       The type for column EmailAddress in table [dbo].[Personnels] is currently  NVARCHAR (250) NULL but is being changed to 
+         NVARCHAR (150) NULL. Data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Personnels].[EmailAddress] (Column)
+     Drop
+       unnamed constraint on [dbo].[Personnels] (Default Constraint)
+     Table rebuild
+       [dbo].[Personnels] (Table)
+
+** Supporting actions
+
+The column [dbo].[Personnels].[BirthDate] is being dropped, data loss could occur.
+The column [dbo].[Personnels].[BirthPlace] is being dropped, data loss could occur.
+The column [dbo].[Personnels].[Gender] is being dropped, data loss could occur.
+The type for column EmailAddress in table [dbo].[Personnels] is currently  NVARCHAR (250) NULL but is being changed to  NVARCHAR (150) NULL. Data loss could occur.
+

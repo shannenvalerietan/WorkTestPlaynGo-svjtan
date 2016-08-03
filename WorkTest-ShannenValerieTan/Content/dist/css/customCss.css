@@ -1,0 +1,59 @@
+.main-header .logo .logo-lg {
+    display: block !important;
+    font-family:Consolas !important;
+}
+.W1000{
+    width: 70%;
+}
+.txtClass:focus {
+  border-color: #3c8dbc;
+  box-shadow: none;
+}
+.marginL10percent{
+    margin-left: 15%;
+    height: 28px;
+    width: 35px;
+}
+.dtp-ui { 
+    z-index: 9999 !important;
+}
+.modal .upload {
+	border: 0;
+}
+.modal .upload > img{
+	width: 140px;
+	height: 140px;
+	text-align: center;
+	line-height: 140px;
+	font-size: 100px;
+	color: #D3D3D3;
+}
+.modal .upload img {
+    cursor: pointer;
+}
+input[readonly] {
+    background-color: transparent !important;
+}
+.table tbody tr:hover td:last-child div.btn-group {
+   
+    display:block !important;
+    margin-left:39% !important;
+    
+}
+
+.table tbody tr:hover td:last-child div.btn-group button {
+padding: 4px 10px !important;
+margin-top:-4px !important;
+display:block !important;
+    
+}
+
+.text-success {
+    color: #0ec711;
+}
+
+.dt-center
+{
+    width:100% !important;
+    text-align:center;
+}

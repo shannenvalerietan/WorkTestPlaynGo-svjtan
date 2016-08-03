@@ -1,0 +1,9 @@
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\bin\Debug\WorkTest.dacpac
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\bin\Debug\WorkTest.dll
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\bin\Debug\WorkTest.pdb
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\obj\Debug\WorkTest.dll
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\obj\Debug\WorkTest.pdb
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\obj\Debug\Model.xml
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\obj\Debug\refactor.xml
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\obj\Debug\postdeploy.sql
+c:\users\shannenigan\documents\visual studio 2015\Projects\WorkTest-ShannenValerieTan\WorkTest\obj\Debug\predeploy.sql
